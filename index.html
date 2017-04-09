@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日历 | 复选框</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<h1> Alice的第四次作业</h1>
+		<p>2017.3.29 | 201412113008 | 刘玉晴</p>
+	</div>
+	<div class="content">
+		<div class="primary">
+			<div class="primary">
+				<h3>一个日历</h3>
+				<table cellspacing="0" class="cal" sunnary= "A calendar style date picker">
+					<caption>
+						<a href="#" rel="prev">&lt;</a>March 2017 <a href="#" rel="next">&gt;</a>
+					</caption>
+					<colgroup>
+						<col id="sun" />
+						<col id="mon" />
+						<col id="tue" />
+						<col id="wed" />
+						<col id="thur" />
+						<col id="fri" />
+						<col id="sat" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">   </th>
+							<th scope="col">Sun</th>
+							<th scope="col">Mon</th>
+							<th scope="col">Tue</th>
+							<th scope="col">Wed</th>
+							<th scope="col">Tur</th>
+							<th scope="col">Fri</th>
+							<th scope="col">Sat</th>
+						</tr>
+					</thead>
+					<!-- 表格本身 -->
+					<tbody>
+						<tr>
+							<td rowspan="5">>⩊<</td>
+							<td class="null">26</td>
+							<td class="null">27</td>
+							<td class="null">28</td>
+							<td><a href="#">1</a></td>
+							<td><a href="#">2</a></td>
+							<td><a href="#">3</a></td>
+							<td><a href="#">4</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">5</a></td>
+							<td><a href="#">6</a></td>
+							<td><a href="#">7</a></td>
+							<td><a href="#">8</a></td>
+							<td><a href="#">9</a></td>
+							<td><a href="#">10</a></td>
+							<td><a href="#">11</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">12</a></td>
+							<td><a href="#">13</a></td>
+							<td><a href="#">14</a></td>
+							<td><a href="#">15</a></td>
+							<td><a href="#">16</a></td>
+							<td><a href="#">17</a></td>
+							<td><a href="#">18</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">19</a></td>
+							<td><a href="#">20</a></td>
+							<td><a href="#">21</a></td>
+							<td><a href="#">22</a></td>
+							<td><a href="#">23</a></td>
+							<td><a href="#">24</a></td>
+							<td><a href="#">25</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">26</a></td>
+							<td><a href="#">27</a></td>
+							<td><a href="#">28</a></td>
+							<td class="selected"><a href="#">29</a></td>
+							<td><a href="#">30</a></td>
+							<td><a href="#">31</a></td>
+							<td class="null">1</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>一个表单</h3>
+				<div class="inputs">
+					<fieldset>
+						<legend>SELECTIONS</legend>
+						<div>
+							<label for= "dateOfBirth">Date of Birth：</label>
+							<input name="dateOfBirth" id="dateOfBirth" type="text" >
+							<label id="monthOfBirthLabel" for= "monthOfBirth">Month of Birth：</label>
+							<select name="monthOfBirth" id="monthOfBirth" type="text">
+								<option value="1">January</option>
+								<option value="2">February</option>
+								<option value="3">March</option>
+							</select>
+							<label id="yearOfBirthLabel" for="yearOfBirth">Year of Birth：</label>
+							<input type="text" name="yearOfBirth" id="yearOfBirth">
+						</div>
+						<div class="single">
+							<label for= "rememberMe">Remember Me ?</label>
+							<label for="rememberYes" ><input type="radio" name="remember" value="yes" id="rememberYes" class="radio">Yes</label>
+							<label for="rememberNo" ><input type="radio" name="remember" value="no" id="rememberNo" class="radio" checked="checked">No</label>
+						</div>
+						<div class="h2">Favorite Color</div>
+						<div class="col">
+							<div>
+								<label><input type="checkbox" name="orange" value="orange" id="orange" class="checkbox">orange</label>
+								<label><input type="checkbox" name="orange" value="orange" id="orange" class="checkbox">orange</label>
+								<label><input type="checkbox" name="orange" value="orange" id="orange" class="checkbox">orange</label>
+								<label><input type="checkbox" name="orange" value="orange" id="orange" class="checkbox">orange</label>
+							</div>
+						</div>
+						<div class="col">
+							<div>
+								<label><input type="checkbox" name="orange" value="orange" id="orange" class="checkbox">orange</label>
+								<label><input type="checkbox" name="orange" value="orange" id="orange" class="checkbox">orange</label>
+								<label><input type="checkbox" name="orange" value="orange" id="orange" class="checkbox">orange</label>
+								<label><input type="checkbox" name="orange" value="orange" id="orange" class="checkbox">orange</label>
+							</div>
+						</div>
+						<div>
+							<p>
+								<button class="btn2">Like Me >⩊< </button>
+							</p>
+						</div>
+					</fieldset>
+				</div>
+
+
+			</div>
+			<div class="secondary">
+				<P>
+					我们不理解彼此的感受
+					<br>
+					但一旦从自己的经验出发<br>却又常能理解彼此的感受<br>
+				<br>
+				就好像一个在寒冬走夜路的人<br>经常爱上另一个在寒冬走夜路的人<br>就好像在深潭里仰着头求生的人<br>会格外伤感地望着另一个在深潭里仰着头求生的人<br>
+				<br>
+				这是一千万个孤独之间的共鸣<br>
+				<br>
+				所以<br>假如你有某种非常孤独的感受<br>不要试图花费力气别人理解自己<br>但也要相信<br>总有人能理解自己<br>
+				<br><br>
+				via 新世相
+			</p>
+			</div>	
+		</div>
+		<div class="secondary">
+			<h4>我的问题：</h3>
+			<p>
+			做复选框的时候无法clear：none;
+			<br>
+			我也不知道我复选框的两列效果是怎么实现的
+			<br>
+			css很多情况下加注释会出bug
+			</p>
+			<h4>千万孤独</h3>
+			<p>
+			孤独的感受，按说是不能共享的。或者说，越深刻的感受，越难以为别人理解，它往往是精深地钻进自己心里，与一些不可重现的场景和经历有关。在读陈坤的自述时，我一直记得他说的那段话，父母离婚的那个下午，他们把西瓜冰镇在水井里，从此，那种记忆，那种“西瓜在井水里冰镇着的记忆”，就带着那一刻的感觉永远留存在心里。
+			<br>
+这种记忆是很难分享的给别人的，别人只能领略一些皮毛，产生一些唏嘘。这样的体验，放到个人身上是非常独特的，像一个深不可测的水潭，但在别人看来，却只是一些水花而已。
+<br>
+一千万个人，就有一千万个习惯冰镇在水井里的感受。因为人的局限，这些感受虽然很想倾吐，却只能在心里反复酝酿，这种感觉，也许就是孤独。而这些特别的孤独，不能共享。有时候我们遇到一个自己喜欢的人，或者自己愿意依靠的人，总是想方设法要把这种感觉表达出来，告诉他们，化解这种无人知道的孤独感。
+			</p>
+		</div>
+	</div>
+
+
+</body>
+</html>

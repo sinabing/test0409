@@ -1,0 +1,211 @@
+body,h3,h1,caption,table,td,th,thead,tbody,tr,a, img,button,div{
+	margin: 0;padding: 0;
+}
+h3, td{ text-align: center; }
+table{
+	// margin: 50px auto;
+}
+h3{
+	text-align: left;
+	margin: 50px 50px 50px 0; font-weight: 100; letter-spacing: 0.2em;color: #555;
+}
+
+/*书上的样式*/
+table.cal{
+	border-collapse: separate;
+	border-spacing: 0;
+	text-align: center;
+	color: #333;
+}
+.cal caption{
+	font-size: 1.25em; 
+	padding-top: 0.692em; 
+	padding-bottom: 0.692em;
+	background-color: #d4dde6;
+}
+.cal caption a[rel = "prev"]{ 
+	float: left; 
+	margin-left: 0.3em;
+}
+.cal caption a[rel = "next"]{ 
+	float: right; margin-right: 0.3em; 
+}
+.cal caption a:link,
+.cal caption a:visited {
+	color: #333;text-decoration: none;transition: 0.2s;
+	padding: 0 0.2em;
+}
+.cal caption a:hover,
+.cal caption a:active,
+.cal caption a:focus{
+	background-color: #6d8ab7;transition: 0.2s;
+	color: #fff;
+}
+.cal thead th {background-color: #d4dde6; border-bottom: 1px solid #a9bacb; font-size: 0.875em;}
+.cal tbody{color: #a4a4a4; text-shadow: 1px 1px 1px #fff; background-color:#d0d9e2;}
+.cal tbody td {
+	border-top: 1px solid #e0e0e1;
+	border-right: 1px solid #9f9fa1;
+	border-bottom: 1px solid #acacad;
+	border-left: 1px solid #dfdfe0;
+}
+.cal tbody a{
+	display: block;
+	text-decoration: none;
+	color: #333;
+	background-color: #c0c8d2;
+	font-weight: bold;
+	padding: 0.385em 0.692em 0.308em 0.692em;
+}
+.cal tbody td[rowspan = "5"]{
+	color: #6db8ab;
+	padding: 0.3em;
+	/*background-color: #fff;*/
+	// rowspan／colspan 合并格子数量
+}
+.cal tbody a:hover,
+.cal tbody a:focus,
+.cal tbody a:active,
+.cal tbody .selected a:link,
+.cal tbody .selected a:visited,
+.cal tbody .selected a:hover,
+.cal tbody .selected a:focus,
+.cal tbody .selected a:active
+{
+	background-color: #6db8ab;
+	color: #fff;
+	text-shadow: 1px 1px 2px #22456b;
+	transition: 0.1s;
+}
+.cal tbody td:hover,
+.cal tbody td.selected {
+	border-top: 1px solid #2a3647;
+	border-right: 1px solid #465977;
+	border-bottom: 1px solid #576e29;
+	border-left: 1px solid #466080;
+	transition: 0.1s;
+}
+.cal tbody td[rowspan = "5"]:hover{
+	border-top: 1px solid #e0e0e1;
+	border-right: 1px solid #9f9fa1;
+	border-bottom: 1px solid #acacad;
+	border-left: 1px solid #dfdfe0;
+}
+
+legend{
+	font-size: 1.5em;
+	color: #6db8ab;
+	letter-spacing: 0.05em;
+}
+.inputs{
+	width: 400px;
+	margin-bottom: 50px;
+	// margin: 0 auto 50px auto;
+	// height: 300px;
+}
+fieldset{
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid #ccc;
+	background-color: #f8f8f8;
+}
+fieldset div{
+	line-height: 2em;
+}
+label{
+	float: left;
+	width: 10em;
+	cursor: pointer;
+	line-height: 2em;
+}
+.inputs div{
+	clear: left;
+}
+#monthOfBirthLabel, #yearOfBirthLabel{
+	text-indent: -1000em;
+	width: 0;
+}
+input#dateOfBirth{
+	width: 3em;
+	margin-right: 0.5em;
+}
+input#monthOfBirth{
+	width: 10em;
+	margin-right: 0.5em;
+}
+input#yearOfBirth{
+	width: 5em;
+}
+.single label:nth-child(2),
+.single label:nth-child(3)
+{width: 6em;}
+h2{float: left; display: block; width: 10em;}
+.col{
+	width: 20em;
+	float: left;
+	clear: none;
+}
+
+button{
+	margin-top: 30px;
+	width: 200px;
+	height: 50px;
+	border: 1px solid #989898;
+	border-radius: 6px;
+	background: url(grn.png) #c5e063 bottom left repeat-x;
+	box-shadow: 2px 2px 2px #ccc;
+	font-size: 26px;
+	color: #c5e063;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #666;
+}
+.content{width: 920px; margin: 0 auto;}
+.content .primary .primary{
+	width: 420px;
+	float: left;
+	display: inline;
+	// background-color: orange;
+	height: 100vh;
+}
+.content .primary .secondary{
+	width: 170px;
+	padding-right: 20px;
+	float: right;
+	display: inline;
+	// background-color: pink;
+	height: 100vh;
+}
+.content .primary{
+	width: 630px;
+	float: right;
+	display: inline;
+	// height: 100vh;
+}
+.content .secondary{
+	width: 270px;
+	float: left;
+	display: inline;
+	// background-color: red;
+	// height: 100vh;
+}
+.header{
+	margin: 0 auto;
+	width: 920px;
+	height: 200px;
+	background-color: #eee;
+}
+.header h1{text-align: center; padding-top: 60px;}
+.header p{text-align: center; letter-spacing: 0.05em;
+font-weight: 100}
+.content p,h4{
+	// padding: 10px;
+	letter-spacing: 0.05em;
+	font-weight: 200;
+	font-size: 0.9em;
+	line-height: 2em;
+}
+h4{
+	font-size: 1.5em;
+	margin-top:30px;
+	margin-bottom: 10px;
+}
